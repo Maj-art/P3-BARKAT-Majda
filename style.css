@@ -52,7 +52,7 @@ a.bouton
     padding: 8px;
     text-decoration: none;
     color: white;
-    background-color: violet;
+    background-color: rgb(206, 117, 206);
 }
    
 
@@ -81,7 +81,7 @@ i
 }
 span
 {
-    color: violet;
+    color: purple;
     position: absolute;
     padding-left:40px;
     
@@ -91,7 +91,11 @@ section.number
     float:left;
     position: relative;
     margin-left: -60px;
-    color: violet;
+    color: white;
+    border-radius: 20px;
+    width:15px;
+    background-color: purple;
+    
 }
 
 
@@ -169,6 +173,20 @@ p
 {
     font-size: 15px;
     padding-left: 10px;
+    line-height: 0%;
+}
+
+div.contentimages
+i
+{
+padding-left: 200px;
+
+
+}
+i:hover
+{
+color:purple;
+
 }
 
 div.containerfooter
@@ -181,7 +199,9 @@ div.containerfooter img
 {
 color:white;
 font-size: 15px;
+
 }
+
 div.containerfooter
 a
 {
@@ -192,6 +212,13 @@ div.containerfooter
 img
 {
     color:white;
+}
+
+div.containerfooter
+i
+{
+    font-size: 10px;
+    padding-right: 5px;
 }
 
 
