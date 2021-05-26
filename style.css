@@ -3,13 +3,98 @@ body
 {
     width:100%;
     margin: auto;
+    
 }
 
 header
 div.logo
 {
     width:100px;
-    padding:1em;
+    padding-left: 30%;
 }
+header
+section.inputheader
+{
+background-color:#f5f5f5;
+padding-left: 30%;
+
+}
+
+div.containerexplorer
+input
+{
+    border: hidden;
+    height: 50px;
+    background-color:lightgray;
+    text-align: center;   
+    
+}
+section.input
+{
+    background-color:lightgray;
+}
+
+div.containerexplorer
+h1
+{
+    font-size: 30px;
+    font-weight: 900;
+} 
+h2
+{
+    font-size: x-large;
+    font-weight: 500;
+} 
+a.bouton
+{
+    border:solid transparent;
+    border-radius: 30px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    background-color: violet;
+}
+   
+
+
+div.containerexplorer
+{
+    background-color: whitesmoke;
+    height:300px;
+    width:90%;
+    margin:auto;
+    text-align: center;
+    
+}
+
+div.containerfonctionnement
+{
+    width:90%;
+    margin:auto;
+}
+
+div.containerfonctionnement
+h1
+{
+ font-size:20px;
+}
+div.containerfonctionnement
+a
+{
+    text-decoration: none;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border:black transparent;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    width:90%;
+    height:40px;
+    text-align:center;
+    padding:15px;
+}
+
+
 
 
