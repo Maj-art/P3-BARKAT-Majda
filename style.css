@@ -237,15 +237,60 @@ section.image img
 div.menucontainer
 {
     width:96%;
+    height: 920px;
     margin:2%;
     background-color: whitesmoke;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-top: -80px;
     position: relative;
+    margin-bottom: 10px;
+
     
        
 }
+
+div.menu
+a
+{
+text-decoration: none;
+color:black;
+}
+h1
+{
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+h2
+{
+    font-size: 20px;
+    padding-left: 20px;  
+    padding-top: 10px;
+    
+}
+
+div.choix
+{
+    background-color: white;
+    height:60px;
+    width:90%;
+    margin:auto;
+    border-radius: 20px;
+     
+}
+h3
+{
+    padding-left: 10px;
+}
+div.choix
+span
+{
+    color:black;
+           
+}
+
 
 
 
