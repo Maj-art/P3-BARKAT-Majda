@@ -234,7 +234,17 @@ section.image img
 
 }
 
+
+div.logo
+i
+{
+margin-left:-120px;
+position:absolute;
+padding-top: 10px;
+}
+
 div.menucontainer
+
 {
     width:96%;
     height: 920px;
@@ -244,9 +254,7 @@ div.menucontainer
     border-top-left-radius: 40px;
     margin-top: -80px;
     position: relative;
-    margin-bottom: 10px;
-
-    
+    margin-bottom: 40px;
        
 }
 
@@ -292,6 +300,21 @@ span
 }
 
 
+div.boutton
+a
+{
+    border:solid transparent;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: 40%;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(206, 117, 206);
+}
+div.containerfooter
+{
+    margin-top: 60px;
+}
 
 
 
