@@ -60,7 +60,7 @@ h2
     font-size: x-large;
     font-weight: 500;
     margin-bottom: 2em;
-    font-family:shrikhand;
+    font-family:'shrikhand';
 }
 div.containerexplorer
 a.bouton
@@ -88,7 +88,7 @@ div.containerexplorer
 .title
 {
     padding: 4em 2em;
-    font-family: shrikhand;
+    font-family: 'shrikhand';
 }
 
 div.containerfonctionnement
@@ -116,7 +116,7 @@ h1
 {
     font-size:1.4em;
     margin-bottom:50px;
-    font-family: shrikhand;
+    font-family: 'shrikhand';
 }
 div.containerfonctionnement
 a
@@ -160,7 +160,7 @@ h1
     width:100%;
     margin:auto;
     margin-bottom: 10px;
-    font-family:shrikhand;
+    font-family:'shrikhand';
 }
 
 div.contentimages img
@@ -196,6 +196,7 @@ h3
     font-size: 1em;
     line-height: 0%;
     padding-left: 10px;
+    font-family: 'shrikhand';
 
 }
 
@@ -306,6 +307,7 @@ h1
     padding-left: 20px;
     padding-top: 10px;
     margin-bottom: 10px;
+    font-family:'shrikhand';
     
 }
 div.menu
