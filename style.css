@@ -71,6 +71,13 @@ a.bouton
     text-decoration: none;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #ccc;
+}
+div.containerexplorer
+a.bouton:hover
+{
+   background:linear-gradient(#ff80db, #c8a2f3);
+   box-shadow:1px 1px 1px 1px #ccc;
 }
    
 
@@ -244,14 +251,8 @@ div.containerfooter
 a
 {
     text-decoration: none; 
-    color:white;     
-}
-
-
-div.containerfooter
-img
-{
     color:white;
+         
 }
 
 div.containerfooter
@@ -259,6 +260,7 @@ i
 {
     font-size: 0.7em;
     padding-right: 5px;
+    
 }
 
 /*partie ci dessous concerne les pages index1 index2 index 3 index4*/
@@ -334,6 +336,12 @@ i
     float:right;
     padding-right: 30px;
 }
+div.menu
+i:hover
+{
+    background: linear-gradient(#FF79DA, #9356DC);
+    overflow: hidden;
+}
 
 
 
@@ -395,8 +403,13 @@ a.bouton
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
-
-
+    box-shadow:0.5px 0.5px 0.5px 0.5px #c8a2f3;
+}
+div.bouton
+a.bouton:hover
+{
+   background:linear-gradient(#ff80db, #c8a2f3);
+   box-shadow:1px 1px 1px 1px #ccc;
 }
 
 
