@@ -14,13 +14,57 @@ body
     
 }
 
+.shadow {
+    box-shadow: 0px 3px 5px 1px #ccc;
+}
+
 header
+nav
+{
+    display: flex; 
+    padding: 10px 0;
+}
+
+header
+nav
+div.back
+{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header
+nav
 div.logo
 {
-    width:100px;
-    padding-left: 30%;
-    font-family: 'Shrikhand', cursive;   
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+header
+nav
+div.action
+{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header
+nav
+a
+{
+    color: black;
+}
+header
+nav
+a:hover
+{
+    color: black;
+}
+
 header
 section.inputheader
 {
@@ -45,19 +89,10 @@ section.input
 }
 
 div.containerexplorer
-h1
-{
-    font-size: 2em;
-    font-weight: 900;
-    margin-bottom: 1em;
-    
-}
-
-div.containerexplorer
 h2
 {
-    font-size: x-large;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 300;
     margin-bottom: 2em;
     
 }
@@ -101,7 +136,7 @@ div.containerfonctionnement
 {
     width: 100%;
     margin: auto;
-    padding: 4em 2em;
+    padding: 3em 2em;
 }
 
 div.number
@@ -121,8 +156,7 @@ div.containerfonctionnement
 h1
 {
     font-size:1.4em;
-    margin-bottom:50px;
-    font-family: 'shrikhand',cursive;
+    margin-bottom: 1em;
 }
 div.containerfonctionnement
 a
@@ -151,6 +185,7 @@ div.containerimages
 
 div.contentimages
 {
+    position: relative;
     background-color: white;
     width: 100%;
     border-radius: 20px;
@@ -184,15 +219,17 @@ a.nouveau
 {
     position:absolute;
     text-decoration: none;
-    margin-top: -120px;
-    margin-left: 280px;
-    text-align:right;
+    top: 20px;
+    right: 20px;
+    text-align: center;
     color:#399780;
-    font-weight: 100;
+    font-weight: 700;
     background-color:#99E2D0;
-    height:25px;
-    width:80px;
-    text-align:center;  
+    height:2em;
+    line-height: 2em;
+    width: 85px;
+    text-align:center;
+    border-radius: 3px;
 }
 
 
@@ -202,7 +239,6 @@ h3
     font-size: 1em;
     line-height: 0%;
     padding-left: 10px;
-    font-family: 'shrikhand',cursive;
     padding-top:10px;
 
 }
@@ -225,6 +261,7 @@ i
     
     
 }
+div.contentimages
 i:hover
 {
 color:  #9356DC;
@@ -273,15 +310,6 @@ section.image img
 
 }
 
-
-div.logo
-i
-{
-margin-left:-120px;
-position:absolute;
-padding-top: 10px;
-color:black;
-}
 
 div.menucontainer
 
@@ -362,7 +390,6 @@ h3
 {
     padding-left: 15px;
     Padding-top:10px;
-    font-family: shrikhand;
     
 }
 
@@ -411,6 +438,12 @@ a.bouton:hover
    background:linear-gradient(#ff80db, #c8a2f3);
    box-shadow:1px 1px 1px 1px #ccc;
 }
+
+
+
+
+
+
 
 
 
