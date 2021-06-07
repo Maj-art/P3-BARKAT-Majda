@@ -402,7 +402,9 @@ i
     border-top-right-radius:10px;
     border-bottom-right-radius: 10px ;
     background-color:#97ecd7; 
-    margin-top: -3.3em;  
+    margin-top: -3.3em; 
+     
+    
 }
 
 
@@ -419,8 +421,7 @@ div.choix
 p
 {
     padding-left:15px;
-    
-    
+      
 }
 
 div.choix
@@ -445,7 +446,7 @@ i
     color:white;
     font-weight: bold;
     line-height: 1em;
-    transition: background-color 1s;
+    transition:all 0.5s ease-in;
        
 }
    
@@ -472,6 +473,7 @@ a.bouton:hover
    background:linear-gradient(#ff80db, #c8a2f3);
    box-shadow:1px 1px 1px 1px #ccc;
 }
+
 
 
 
