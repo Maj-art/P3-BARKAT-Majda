@@ -13,7 +13,45 @@ body
     margin: auto;
     
 }
-
+.loading
+{
+    background-color:lavender;
+    text-align: center;
+    
+}
+.loader
+{
+    width:50px;
+    height:50px;
+    display:inline-block;
+    vertical-align: middle;
+    position: relative;
+    
+}
+.loading-spinner
+{
+  border-radius:50px;
+  border:6px solid rgb(255, 255, 255,0.4);
+  
+}
+.loading-spinner:after
+{
+content: "";
+position: absolute;
+top: -6px; 
+bottom:-6px;
+left:-6px;
+right:-6px;
+border:6px solid transparent;
+border-top-color: #fff;
+border-radius: 50px;
+animation: spin 3s linear 3s infinite;
+}
+@keyframes spin
+{
+0%{transform: rotate (0deg);}
+100%{transform: rotate(360deg);}
+}
 .shadow {
     box-shadow: 0px 3px 5px 1px #ccc;
 }
@@ -87,6 +125,7 @@ section.input
 {
     background-color:lightgray;
 }
+
 
 div.containerexplorer
 h2
@@ -392,6 +431,7 @@ span.price
 {
     padding-right:60px;
     
+    
 }
 .choix:hover
 section.yes
@@ -402,11 +442,61 @@ i
     border-top-right-radius:10px;
     border-bottom-right-radius: 10px ;
     background-color:#97ecd7; 
-    margin-top: -3.3em; 
-     
-    
+    margin-top: -3.3em;    
+   
 }
+.entrees
+{
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .plats
+  {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
 
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .desserts
+
+  {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 
 div.choix
@@ -446,7 +536,7 @@ i
     color:white;
     font-weight: bold;
     line-height: 1em;
-    transition:all 0.5s ease-in;
+    transition:all 1s ease-in;
        
 }
    
