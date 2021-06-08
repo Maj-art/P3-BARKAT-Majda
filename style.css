@@ -180,6 +180,13 @@ div.containerfonctionnement
     
 }
 
+div.containerfonctionnement
+a:hover
+{
+background-color:rgb(246, 242, 242);
+box-shadow: 0.1em 0.1em 0.1em 0.1em #ccc;
+}
+
 div.number
 {
     position: absolute;
@@ -356,6 +363,7 @@ i
     
 }
 
+
 /*partie ci dessous concerne les pages index1 index2 index 3 index4*/
 
 
@@ -366,6 +374,11 @@ section.image img
 
 }
 
+section.image
+.photo
+{
+    height: 250px;
+}
 
 div.menucontainer
 
@@ -443,6 +456,7 @@ i
     border-bottom-right-radius: 10px ;
     background-color:#97ecd7; 
     margin-top: -3.3em;    
+    vertical-align: middle;
    
 }
 .entrees
