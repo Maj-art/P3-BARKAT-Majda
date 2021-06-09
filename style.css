@@ -15,8 +15,9 @@ body
 }
 .loading
 {
-    background-color:lavender;
+    background-color:white;
     text-align: center;
+    
     
 }
 .loader
@@ -24,15 +25,13 @@ body
     width:50px;
     height:50px;
     display:inline-block;
-    vertical-align: middle;
     position: relative;
     
 }
 .loading-spinner
 {
   border-radius:50px;
-  border:6px solid rgb(255, 255, 255,0.4);
-  
+  border:6px solid lavender;  
 }
 .loading-spinner:after
 {
@@ -43,7 +42,7 @@ bottom:-6px;
 left:-6px;
 right:-6px;
 border:6px solid transparent;
-border-top-color: #fff;
+border-top-color:blue;
 border-radius: 50px;
 animation: spin 3s linear 3s infinite;
 }
@@ -52,6 +51,8 @@ animation: spin 3s linear 3s infinite;
 0%{transform: rotate (0deg);}
 100%{transform: rotate(360deg);}
 }
+
+
 .shadow {
     box-shadow: 0px 3px 5px 1px #ccc;
 }
@@ -197,6 +198,7 @@ div.number
     background-color: #9356DC;
     top: 15px;
     left: -10px;   
+    
 }
 
 div.containerfonctionnement
@@ -305,6 +307,14 @@ p
     font-size: 1em;
     padding-left: 10px;
     padding-top:10px;
+}
+
+div.containerfonctionnement
+a
+{
+display: flex;  
+justify-content: space-evenly;
+   
 }
 
 div.contentimages
@@ -459,6 +469,17 @@ i
     vertical-align: middle;
    
 }
+.entrees
+i.fa-heart:hover:
+
+{
+ background:pink;
+
+}
+
+
+  
+
 .entrees
 {
   animation-duration: 1s;
