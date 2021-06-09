@@ -437,6 +437,19 @@ i
     float:right;
     padding-right: 30px;
 }
+div.menu
+i.fa-heart
+{
+    background-color:whitesmoke;
+    border-radius: 50%; 
+    transition: color 1s ease-in;  
+}
+
+i.fa-heart:hover
+{
+    color:rgb(221, 123, 221);
+    font-weight: bold;
+}
 
 div.choix
 {
@@ -469,16 +482,6 @@ i
     vertical-align: middle;
    
 }
-.entrees
-i.fa-heart:hover:
-
-{
- background:pink;
-
-}
-
-
-  
 
 .entrees
 {
