@@ -631,6 +631,18 @@ h1
 {
 width:100%;
 }
+
+div.contentimages
+{
+width:45%;
+}
+
+div.containerimages
+{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
 }
 
 
