@@ -13,43 +13,61 @@ body
     margin: auto;
     
 }
-.loading
-{
-    background-color:white;
-    text-align: center;
-    
-    
-}
-.loader
-{
-    width:50px;
-    height:50px;
-    display:inline-block;
+
+.lds-ring {
+    display: inline-block;
     position: relative;
-    
+    width: 80px;
+    height: 80px;
 }
-.loading-spinner
-{
-  border-radius:50px;
-  border:6px solid lavender;  
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #9356DC transparent transparent transparent;
 }
-.loading-spinner:after
-{
-content: "";
-position: absolute;
-top: -6px; 
-bottom:-6px;
-left:-6px;
-right:-6px;
-border:6px solid transparent;
-border-top-color:blue;
-border-radius: 50px;
-animation: spin 3s linear 3s infinite;
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
 }
-@keyframes spin
-{
-0%{transform: rotate (0deg);}
-100%{transform: rotate(360deg);}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-frame{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 100;
+    animation: fadeout 0.5s ease-in forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; visibility: visible; }
+    to { opacity: 0; visibility: hidden; }
 }
 
 
@@ -316,6 +334,12 @@ display: flex;
 justify-content: space-evenly;
    
 }
+div.containerfonctionnement
+i
+{
+    font-size: 15px;
+
+}
 
 div.contentimages
 i
@@ -442,7 +466,7 @@ i.fa-heart
 {
     background-color:whitesmoke;
     border-radius: 50%; 
-    transition: color 1s ease-in;  
+    transition: color 0.2s ease-in;  
 }
 
 i.fa-heart:hover
@@ -488,39 +512,18 @@ i
   animation-duration: 1s;
   animation-name: slidein;
 }
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-  .plats
+
+.plats
   {
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-name: slidein;
   }
 
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
-  .desserts
+ .desserts
 
   {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
   }
 
@@ -574,7 +577,7 @@ i
     color:white;
     font-weight: bold;
     line-height: 1em;
-    transition:all 1s ease-in;
+    transition:all 0.2s ease-in;
        
 }
    
@@ -600,6 +603,34 @@ a.bouton:hover
 {
    background:linear-gradient(#ff80db, #c8a2f3);
    box-shadow:1px 1px 1px 1px #ccc;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) 
+{
+ body
+{
+width: auto;
+margin:auto;
+}
+
+div.containerfonctionnement
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+div.containerfonctionnement
+a
+{
+width:30%;
+}
+
+div.containerfonctionnement
+h1
+{
+width:100%;
+}
 }
 
 
