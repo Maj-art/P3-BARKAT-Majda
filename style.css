@@ -552,6 +552,7 @@ div.choix
 p
 {
     padding-left:15px;
+    text-overflow: ellipsis;
       
 }
 
@@ -647,8 +648,8 @@ justify-content: space-around;
 header
 section.image
 {
-    width:70%;
-    margin-left:15%;
+    width:90%;
+    margin-left:5%;
 
 }
 
