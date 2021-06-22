@@ -643,6 +643,43 @@ display:flex;
 flex-wrap: wrap;
 justify-content: space-around;
 }
+
+header
+section.image
+{
+    width:70%;
+    margin-left:15%;
+
+}
+
+div.menucontainer
+div.choix
+{ 
+    width:50%;
+    margin-left: 20%;
+}
+
+menu.entrees
+{
+  width:70%;  
+}
+div.menucontainer
+h2
+{
+margin-left:20%;
+}
+div.menucontainer
+h1
+{
+margin-left: 18%;
+}
+
+div.menu
+i.fa-heart
+{
+    margin-right:35%;
+}
+
 }
 
 
