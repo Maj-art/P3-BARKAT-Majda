@@ -433,6 +433,7 @@ a
 {
 text-decoration: none;
 color:black;
+
 }
 div.menu
 h1
@@ -464,16 +465,31 @@ i
 div.menu
 i.fa-heart
 {
-    background-color:whitesmoke;
-    border-radius: 50%; 
-    transition: color 0.2s ease-in;  
+    cursor: pointer;
+    color: black;
 }
 
 i.fa-heart:hover
 {
-    color:rgb(221, 123, 221);
     font-weight: bold;
+    color: transparent !important;
+    background: linear-gradient(to bottom, transparent 50%, #9356DC 0%, #FF79DA) top;
+    background-size: 100% 200%;
+
+    background-clip: text;
+
+    animation-duration: 0.5s;
+    animation-name: heartbg;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
+
+@keyframes heartbg {
+    100% {
+        background-position: bottom;
+    }
+}
+
 
 div.choix
 {
@@ -509,43 +525,54 @@ i
 
 .entrees
 {
-  animation-duration: 1s;
-  animation-name: slidein;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
 }
 
 .plats
   {
-    animation-duration: 1.5s;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
     animation-name: slidein;
+    animation-fill-mode: forwards;
   }
 
 
  .desserts
 
   {
-    animation-duration: 2s;
+    opacity: 0;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
     animation-name: slidein;
+    animation-fill-mode: forwards;
   }
 
   @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%;
+        opacity: 0;
+        margin-left: 50%;
+        width: 100%;
     }
   
     to {
-      margin-left: 0%;
-      width: 100%;
+        opacity: 1;
+        margin-left: 0%;
+        width: 100%;
     }
   }
-
-
 div.choix
 h3
 {
-    padding-left: 15px;
-    Padding-top:10px;
-    
+padding-left: 15px;
+Padding-top:10px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 div.choix
@@ -554,6 +581,12 @@ p
     padding-left:15px;
     text-overflow: ellipsis;
       
+}
+
+div.choix
+a
+{
+    text-overflow: ellipsis;
 }
 
 div.choix
