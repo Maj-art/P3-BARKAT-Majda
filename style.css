@@ -466,9 +466,7 @@ i.fa-heart:hover
     color: transparent !important;
     background: linear-gradient(to bottom,transparent 50% , #9356DC 0%, #FF79DA) top;
     background-size: 100% 200%;
-
-    background-clip: text;
-
+    -webkit-background-clip: text;
     animation-duration: 0.5s;
     animation-name: heartbg;
     animation-fill-mode: forwards;
