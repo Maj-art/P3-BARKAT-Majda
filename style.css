@@ -491,6 +491,107 @@ div.choix
     margin-bottom: 10px;
      
 }
+
+div.choix2
+{
+    background-color: white;
+    width:96%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.choix2
+.choix-text
+{
+    flex: 1;
+}
+
+div.choix2
+.choix-text
+.choix-description
+{
+    display: flex;
+}
+
+div.choix2
+.choix-text
+{
+    padding: 0.8em 1.6em 0.8em 0.8em;
+    min-width: 0;
+}
+
+div.choix2
+.choix-text
+h3
+{
+    padding-bottom: 0.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+div.choix2
+.choix-text
+.choix-description
+p
+{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+div.choix2
+.check
+{
+    background-color: #97ecd7;
+    color: white;
+    width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+div.choix2
+.check
+i
+{
+    transform: rotate(0deg);
+    transition: all 0.4s linear;
+}
+
+div.choix2:hover
+.check
+{
+    opacity: 1;
+    width: 4em;
+}
+
+div.choix2:hover
+.check
+i
+{
+    transform: rotate(360deg);
+}
+
+div.choix2
+.check
+i
+{
+    float: none;
+    padding-right: 0px;
+    font-size: 1.4em;
+}
+
 .choix:hover
 span.price
 {
@@ -498,6 +599,20 @@ span.price
     
     
 }
+.choix:hover
+section.yes
+i
+{
+    padding: 2em 1.5em 1em 1em;
+    border:transparent;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px ;
+    background-color:#97ecd7; 
+    margin-top: -3.1em;    
+    vertical-align: middle;
+   
+}
+
 .choix:hover
 section.yes
 i
@@ -676,7 +791,7 @@ section.image
 }
 
 div.menucontainer
-div.choix
+div.choix2
 { 
     width:50%;
     margin-left: 20%;
