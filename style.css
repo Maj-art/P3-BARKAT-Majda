@@ -11,7 +11,12 @@ body
     font-size: 15px;
     width:100%;
     margin: auto;
-    
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 5px #ddd;
 }
 
 .lds-ring {
@@ -140,7 +145,7 @@ input
     text-align: center;   
     
 }
-section.input
+div.input
 {
     background-color:lightgray;
 }
@@ -160,7 +165,7 @@ a.bouton
     display: inline-block;
     border: none;
     border-radius: 30px;
-    padding: 8px;
+    padding: 12px 18px;
     text-decoration: none;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
@@ -202,7 +207,7 @@ div.containerfonctionnement
 div.containerfonctionnement
 a:hover
 {
-background-color:rgb(246, 242, 242);
+background-color:rgba(147, 86, 220, 0.1);
 box-shadow: 0.1em 0.1em 0.1em 0.1em #ccc;
 }
 
@@ -214,13 +219,14 @@ div.number
     width:20px;
     height:20px;
     background-color: #9356DC;
-    top: 15px;
+    top: 25px;
     left: -10px;   
-    
+    font-weight: normal;
+    text-align:center;
 }
 
 div.containerfonctionnement
-h1
+h2
 {
     font-size:1.4em;
     margin-bottom: 1em;
@@ -231,24 +237,25 @@ a
     display: block;
     text-decoration: none;
     color: black;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     border:black transparent;
     border-radius: 10px;
     background-color: whitesmoke;
     width: 100%;
-    text-align:center;
-    padding:15px;
+    max-width: 360px;
+    padding: 25px 15px;
     box-shadow: 0px 3px 5px 1px #ccc; 
     position: relative;
-    
+    font-weight: bold;
 }
 
 div.containerfonctionnement
-i:hover
+a:hover
+i
 {
     color:  #9356DC;
-    transition: color 1s;
-    
 }
 
 div.containerimages
@@ -265,29 +272,29 @@ div.contentimages
     background-color: white;
     width: 100%;
     border-radius: 20px;
-    height:200px;
+    height: 270px;
     margin-bottom: 20px;
     box-shadow: 0px 3px 5px 1px #ccc;
 }
 
 div.containerimages
-h1
+h2
 {
     font-size: 1.4em;
     width:100%;
     margin:auto;
     margin-bottom: 10px;
-    
 }
 
 div.contentimages img
 {
     width: 100%;
     object-fit: cover;
+    object-position: 50% 60%;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height:70%;
+    height: 200px;
     position: relative;
 }
 div.contentimages
@@ -315,7 +322,7 @@ h3
     font-size: 1em;
     line-height: 0%;
     padding-left: 10px;
-    padding-top:10px;
+    padding-top: 20px;
 
 }
 
@@ -328,17 +335,12 @@ p
 }
 
 div.containerfonctionnement
-a
-{
-display: flex;  
-justify-content: space-evenly;
-   
-}
-div.containerfonctionnement
 i
 {
     font-size: 15px;
-
+    display: inline-block;
+    width: 3em;
+    padding-left: 1em;
 }
 
 div.contentimages
@@ -354,8 +356,14 @@ div.containerfooter
     background-color: black;
     width:100%;
     margin:auto;
-    padding-bottom: 25px;
+    padding: 10px 15px 25px 15px;
        
+}
+
+div.containerfooter
+ul
+{
+    list-style-type: none;
 }
 
 div.containerfooter 
@@ -377,14 +385,14 @@ a
     color:white;
     padding-left:1em;
     line-height: 1.5em;
-         
 }
 
 div.containerfooter
 i
 {
+    display: inline-block;
     font-size: 0.7em;
-    padding-right: 5px;
+    width: 2em;
     
 }
 
@@ -393,16 +401,21 @@ i
 
 
 
-section.image img
+figure.image
 {
-  width:100%;
-
+    width:100%;
+    height: 50vw;
+    max-height: 500px;
 }
 
-section.image
-.photo
+figure.image
+img
 {
-    height: 250px;
+    object-fit: cover;
+    object-position: 50% 60%;
+    width:100%;
+    height: 50vw;
+    max-height: 500px;
 }
 
 div.menucontainer
@@ -418,6 +431,11 @@ div.menucontainer
           
 }
 
+div.menu
+{
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
 
 div.menu
 a
@@ -426,34 +444,34 @@ text-decoration: none;
 color:black;
 
 }
-div.menu
+div.menucontainer
 h1
 {
     font-size: 25px;
     padding-left: 20px;
-    padding-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 35px;
+    margin-bottom: 20px;
     font-family:'shrikhand',cursive;
     
 }
-div.menu
+div.menucontainer
 h2
 {
     font-size: 20px; 
     padding-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
     border-bottom:#99E2D0 solid;
-    width:10%;   
+    width: 50px;   
 }
     
-div.menu
+div.menucontainer
 i
 {
     float:right;
     padding-right: 30px;
 }
-div.menu
+div.menucontainer
 i.fa-heart
 {
     cursor: pointer;
@@ -500,7 +518,7 @@ div.choix2
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     cursor: pointer;
     overflow: hidden;
@@ -626,13 +644,13 @@ i
   @keyframes slidein {
     from {
         opacity: 0;
-        margin-left: 50%;
+        transform: translateY(30px);
         width: 100%;
     }
   
     to {
         opacity: 1;
-        margin-left: 0%;
+        transform: translateY(0px);
         width: 100%;
     }
   }
@@ -660,21 +678,24 @@ a
     text-overflow: ellipsis;
 }
 
+div.bouton
+{
+    padding-bottom: 40px;
+    width: 100%;
+}
   
 div.bouton
 a.bouton
 {
-    display: inline-block;
+    display: block;
     border: none;
     border-radius: 30px;
-    padding: 8px;
+    padding: 12px 18px;
     width:150px;
     text-decoration: none;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
-    margin-left: 30%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: auto;
     text-align: center;
     box-shadow:0.5px 0.5px 0.5px 0.5px #c8a2f3;
 }
@@ -685,7 +706,7 @@ a.bouton:hover
    box-shadow:1px 1px 1px 1px #ccc;
 }
 
-@media (min-width: 1025px)
+@media (min-width: 960px)
 {
  body
 {
@@ -707,7 +728,7 @@ width:30%;
 }
 
 div.containerfonctionnement
-h1
+h2
 {
 width:100%;
 }
@@ -724,35 +745,19 @@ flex-wrap: wrap;
 justify-content: space-around;
 }
 
-header
-section.image
+div.menu
 {
-    width:90%;
-    margin-left:5%;
-
+    display: flex;
+    flex-flow: row wrap;
 }
 
-div.menucontainer
+div.menu
 div.choix2
 { 
-    width:50%;
-    margin-left: 20%;
+    width: calc(50% - 15px);
+    margin: 0 7px 15px 7px;
 }
 
-menu.entrees
-{
-  width:70%;  
-}
-div.menucontainer
-h2
-{
-margin-left:20%;
-}
-div.menucontainer
-h1
-{
-margin-left: 18%;
-}
 
 div.menu
 i.fa-heart
